@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+
+.nav {
+            display: flex;
+            align-items: center;
+            background-color: #545384;
+            padding: 10px;
+            
+        }
+
+.nav img {
+            margin-right: 20px;
+            background-color: white;
+            border-radius: 50px;
+        }
+
+        .nav-item {
+            background-color: #EAEAF1; 
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            color: #545384;
+            text-decoration: none;
+            transition: background-color 0.3s; 
+
+        }
+
+        .nav-item:hover {
+            background-color: #D3D3E2; 
+        }
+
+         .denuncie {
+            margin-left: auto; 
+            color: #5A4E91; 
+            font-weight: bold;
+        }
