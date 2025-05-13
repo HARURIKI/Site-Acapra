@@ -3,43 +3,103 @@
 }
 
 .nav {
-            display: flex;
-            align-items: center;
-            background-color: #545384;
-            padding: 5px;
-            justify-content: space-between;
-            
-        }
+    display: flex;
+    align-items: center;
+    background-color: #545384;
+    padding: 5px;
+    justify-content: space-between;
+
+}
 
 .nav img {
-            margin-right: 20px;
-            background-color: white;
-            border-radius: 50px;
-            width: 50px;
-        }
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 50px;
+    width: 50px;
+}
 
-        .nav-item {
-            background-color: #EAEAF1; 
-            border-radius: 5px;
-            padding: 10px 60px;
-            margin: 0 10px;
-            font-weight: bold;
-            color: #545384;
-            text-decoration: none;
-            transition: background-color 0.3s; 
+.nav-item {
+    background-color: #EAEAF1;
+    border-radius: 5px;
+    padding: 10px 60px;
+    margin: 0 10px;
+    font-weight: bold;
+    color: #545384;
+    text-decoration: none;
+    transition: background-color 0.3s;
 
-        }
+}
 
-        .nav-item:hover {
-            background-color: #D3D3E2; 
-        }
+.nav-item:hover {
+    background-color: #D3D3E2;
+}
 
-         .maustratos {
-            margin-left: auto; 
-            color: #5A4E91; 
-            font-weight: bold;
-        }
+.maustratos {
+    margin-left: auto;
+    color: #5A4E91;
+    font-weight: bold;
+}
 
-        a {
-            color: white;
-        }
+a {
+    color: #5A4E91;
+}
+
+.Conteiner-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza os cards na horizontal */
+}
+
+.product {
+    width: 250px; /* Largura fixa para os cards */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.donation-basket h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.donation-info h2 {
+     text-align: center;
+    padding: 40px;
+}
+
+.OBRIGADO p {
+    text-align: center;
+    padding: 10px;
+}
+
+.imagens-lado-a-lado {
+    display: flex;
+    gap: 20px; 
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.OBRIGADO img {
+    width: 500px;
+    padding: 100px;
+}
+
+.rodape {
+    background-color: #545384;
+    padding: 50px;
+}
+
+.rodape p {
+    color: white;
+    text-align: center;
+}
