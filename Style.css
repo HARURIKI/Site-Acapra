@@ -159,7 +159,7 @@ h2 {
     object-fit: cover;
     object-position: 90%;
     margin-top: 3%;
-    border: 5px solid #545384
+    border: 5px solid #545384;
 }
 
 .texto-com-fundo {
@@ -169,12 +169,10 @@ h2 {
     max-width: 800px;
     border-radius: 15px;
     color: white;
-    text-align: :left;
+    text-align: left;
 }
 
-
 .maria-vitoria {
-
     background-color: #545384;
     padding: 20px;
     margin: 30px 30px 30px;
@@ -183,4 +181,55 @@ h2 {
     color: white;
     text-align: center;
 }
+
+.conteudo-geral {
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.coluna-textos {
+    flex: 2;
+}
+
+.noticias-container {
+    width: 90%;
+    max-width: 500px;
+    background-color: #4e3b7c;
+    color: white;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .titulo-noticias {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #7f6db0;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .noticia {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .noticia img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    object-fit: fill;
+  }
+
 
