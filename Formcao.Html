@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário Gatos</title>
     <link rel="stylesheet" href="Style.css">
 </head>
-<header>
+    <header>
 <div class="nav">
         <a href="Inicial.html"a>
         <img src="Assets/logo roxa (1).png" alt="Ícone de pata" width="50"> 
@@ -18,7 +18,87 @@
  </div>
 </header>
 <body>
-    
+    <h1>Formulário de adoção de cães</h1>
+    <p>Seu coração ficou mais quentinho com algum de nossos pets? Preencha o formulário abaixo com as informações necessárias e clique no botão de enviar para analisarmos seu pedido de adoção:</p>
+<form action="" method="post">
+    <fieldset>
+        <label for="nome">Nome:</label>
+        <input id="nome" name="nome" type="text" placeholder="Nome completo">
+        <br>
+        <label for="numero">Número:</label>
+        <input id="numero" name="numero" type="number" placeholder="Número para Contato">
+        <br>
+        <p>Todos da sua residência concordam com a adoção?</p>
+        Sim <input type="checkbox">
+        Não <input type="checkbox">
+        <br>
+        <br>
+        <label for="nome-animal">Por qual animal você se interessou para adotar?</label>
+        <input id="nome-animal" name="nome-animal" type="text" placeholder="Nome do animal">
+        <br>
+        <label for="idade">Qual a sua idade? (Somente maior de 18 anos)</label>
+        <input id="nome" name="nome" type="text" placeholder="Idade">
+        <br>
+        <label for="qtd">Você tem outros animais? Se sim, quantos e quais?</label>
+        <input id="qtd" name="qtd" type="text" placeholder="Quantos animais possui">
+        <br>
+        <p>São castrados e vacinados?</p>
+        Sim <input type="checkbox">
+        Não <input type="checkbox">
+        <br>
+        <br>
+        <label for="moradia">Você mora em casa ou apartamento? Próprio ou alugado?</label>
+        <input id="moradia" name="moradia" type="text" placeholder="Tipo de moradia">
+        <br>
+        <label for="endereco">Qual seu endereço completo? (Rua, CEP, número da casa e ponto de referência)</label>
+        <input id="endereco" name="endereco" type="text" placeholder="Endereço">
+        <br>
+        <label for="renda">Qual a sua renda?</label>
+        <input id="renda" name="renda" type="text" placeholder="Valor em R$">
+        <br>
+        <label for="casinha">Qual o local em que o animal irá ficar? A sua casa/apto possui um espaço adequado e cercado?</label>
+        <input id="casinha" name="casinha" type="text" placeholder="Onde o animal ficará">
+        <br>
+        <p>A sua residência tem telas?</p>
+        Sim <input type="checkbox">
+        Não <input type="checkbox">
+        <br>
+        <br>
+        <p>O animal terá acesso à rua?</p>
+        Sim <input type="checkbox">
+        Não <input type="checkbox">
+        <br>
+        <br>
+        <p>A castração e vacinação do animal é obrigatória, você concorda com isso?</p>
+        Sim <input type="checkbox">
+        Não <input type="checkbox">
+        <br>
+        <br>
+        <p>Existe uma taxa de adoção colaborativa de R$30,00. Você concorda em contribuir?</p>
+        Sim <input type="checkbox">
+        Não <input type="checkbox">
+        <br>
+        <br>
+        <label for="saude">Você tem condições físicas, mentais e financeiras de manter um animal? Uma boa ração? Visitas ao veterinário? Castração? Passeios?</label>
+        <input id="saude" name="saude" type="text" placeholder="Explique sua situação">
+        <br>
+        <br>
+        <br>
+        <h2>Favor enviar os seguintes documentos:</h2>
+        <br>
+    <div>
+        <h3>Lista não ordenada</h3>
+        <ul>
+            <li>Foto do RG;</li>
+            <li>Foto do comprovante de renda;</li>
+            <li>Foto do Local onde o animal irá ficar (terreno, casa, canil...);</li>
+            <li>Se tiver outros animais, foto dos mesmos e das suas carteiras de vacinação.</li> <br>              
+        </ul>
+        <input type="button" value="Faça upload das imagens"> <img src="Assets/upload.png" alt="Imagem de upload"> 
+    </div>
+    </fieldset>
+    <input type="reset" value="Resetar Form">
+</form>
 </body>
 <footer class="rodape">
     <div>
