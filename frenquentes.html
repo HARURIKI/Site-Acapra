@@ -1,177 +1,74 @@
-<!DOCTYPE html>
 <html class="scroll-smooth" lang="pt-BR">
-<head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>Pet Adoption Info</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-    /* Seu CSS customizado aqui */
-    body {
-      background-color: white;
-      overflow-x: hidden;
-      position: relative;
-    }
-    /* Estilo do cabeçalho */
-    .nav {
-      background-color: #6B63B5; /* roxo do Brutal Kill, pode ajustar */
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      padding: 10px 20px;
-      font-weight: bold;
-      font-family: 'Arial Black', Arial, sans-serif;
-      color: white;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .nav a {
-      color: white;
-      text-decoration: none;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      font-size: 14px;
-    }
-    .nav a:hover {
-      background-color: #4b47a0; /* tom mais escuro no hover */
-    }
-    .nav img {
-      cursor: pointer;
-    }
-    /* Resto do seu código */
-    .max-w-[1200px] {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-      display: flex;
-      flex-direction: column;
-    }
-    @media (min-width: 768px) {
-      .flex-md-row {
-        flex-direction: row;
-      }
-    }
-    .image-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .image-rotate-left {
-      transform: rotate(-3deg);
-      overflow: hidden;
-      border-radius: 0.5rem;
-      max-width: 90%;
-      max-height: 250px;
-      object-fit: cover;
-    }
-    .image-rotate-right {
-      transform: rotate(3deg);
-      overflow: hidden;
-      border-radius: 0.5rem;
-      margin-top: -2.5rem;
-      max-width: 90%;
-      max-height: 250px;
-      object-fit: cover;
-    }
-    .text-container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-top: 1.5rem;
-    }
-    .text-box {
-      background-color: #6B63B5;
-      color: white;
-      padding: 1rem;
-      border-radius: 0.75rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      font-size: 11px;
-      line-height: 1.2;
-    }
-    .text-box p:last-child {
-      font-weight: 400;
-      text-transform: uppercase;
-      margin-top: 0.3rem;
-      line-height: 1.3;
-      font-size: 10px;
-    }
-    .fixed-paw-right {
-      position: fixed;
-      top: 80px;
-      right: 0;
-      z-index: 10;
-      opacity: 0.3;
-      max-width: 60px;
-    }
-    .fixed-cat-bottom-right {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      z-index: 10;
-      opacity: 0.3;
-      max-width: 60px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="nav">
-      <a href="Inicial.html">
-        <img src="Assets/logo roxa (1).png" alt="Ícone de pata" width="50" />
-      </a>
-      <a href="Animais.Html" class="nav-item">ANIMAIZINHOS</a>
-      <a href="Doação.Html" class="nav-item">DOAÇÕES</a>
-      <a href="Lar.Html" class="nav-item">OFERECER LAR TEMPORÁRIO</a>
-      <a href="frenquentes.html" class="nav-item">PERGUNTAS FREQUENTES</a>
-      <a href="maustratos.html" class="nav-item">MAUS TRATOS</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Pet Adoption Info</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white relative overflow-x-hidden">
 
-  <main class="max-w-[1200px] mx-auto px-4 py-8 flex flex-col md:flex-row md:space-x-6 flex-md-row">
-    <div class="image-container">
-      <img src="Assets/Luzia.jpeg" alt="Luzia" class="image-rotate-left" />
-      <img src="Assets/Difusor.jpeg" alt="Difusor" class="image-rotate-right" />
-    </div>
-    <div class="text-container">
-      <div class="text-box">
-        <p><span class="block mb-1">O QUE PRECISO TER ANTES DE TRAZER O PET PARA CASA?</span></p>
-        <p>Muito amor para dar e carinho, mas não esquecendo de ração, brinquedos para o pet passar tempo e se divertir, uma caixinha de transporte e afins.</p>
+    <!-- Container principal com z-10 -->
+    <div class="relative z-10 max-w-[1200px] mx-auto px-4 py-8 flex flex-col md:flex-row md:space-x-6">
+      <!-- Imagens Luzia e Difusor com tamanho reduzido -->
+      <div class="md:w-1/2 flex flex-col space-y-4">
+        <div class="relative rounded-lg overflow-hidden" style="transform: rotate(-3deg);">
+          <img src="Assets/Luzia.jpeg" class="w-[250px] h-auto mx-auto" />
+        </div>
+        <div class="relative rounded-lg overflow-hidden" style="transform: rotate(3deg); margin-top: -40px;">
+          <img src="Assets/Difusor.jpeg" class="w-[250px] h-auto mx-auto" />
+        </div>
       </div>
-      <div class="text-box">
-        <p><span class="block mb-1">QUEM PODE REALIZAR UMA ADOÇÃO?</span></p>
-        <p>Qualquer um pode realizar uma adoção, apenas é necessário ter no mínimo 18 anos e preencher os requisitos no nosso formulário do site!!</p>
-      </div>
-      <div class="text-box">
-        <p><span class="block mb-1">O QUE POSSO FAZER PARA AJUDAR O PET A SE ADPTAR AO SEU NOVO LAR?</span></p>
-        <p>1- Manter a calma no momento de adaptação do seu animalzinho.<br/>
-          2- Manter uma rotina para o animalzinho, seja a hora de comer, brincar, dormir ou possivelmente passear.<br/>
-          3- Manter o cheiro de seus objetos.<br/>
-          4- Ser amoroso.<br/>
-          5- Cuidar com porta e janelas(principalmente envolvendo gatos).<br/>
-          6- Apresente outros animalzinho ou pessoas, mas com muita calma para não assustar o mesmo.<br/>
-          7- Seja feliz com seu animalzinho.
-        </p>
-      </div>
-      <div class="text-box">
-        <p><span class="block mb-1">QUAIS DOCUMENTOS SÃO NECESSÁRIOS PARA ADOTAR?</span></p>
-        <p>É necessário ter RG ou CNH, comprovante de residência, além de ser necessário preencher nosso formulário.</p>
-      </div>
-      <div class="text-box">
-        <p><span class="block mb-1">POSSO SAIR COM O MEU GATO NO COLO?</span></p>
-        <p>Sempre visamos o bem estar do seu animalzinho, o melhor a ser feito é trazer consigo uma caixinha de transporte no dia da retirada.</p>
-      </div>
-    </div>
-  </main>
 
-  <!-- Paw prints on right side vertically -->
-  <img src="Assets/istockphoto-1138089752-612x612-removebg-preview.png" alt="Paw prints" class="fixed-paw-right" />
-  <!-- Cat bottom right corner -->
-  <img src="Assets/istockphoto-1138089752-612x612-removebg-preview.png" alt="Cat" class="fixed-cat-bottom-right" />
-</body>
+      <!-- Blocos de texto -->
+      <div class="md:w-1/2 flex flex-col space-y-4 mt-6 md:mt-0">
+        <div class="bg-[#6B63B5] rounded-lg p-4 text-white text-[11px] leading-tight font-extrabold uppercase">
+          <p><span class="block mb-1">O QUE PRECISO TER ANTES DE TRAZER O PET PARA CASA?</span></p>
+          <p class="font-normal uppercase leading-snug">
+            Muito amor para dar e carinho, mas não esquecendo de ração, brinquedos para o pet passar tempo e se divertir, uma caixinha de transporte e afins.
+          </p>
+        </div>
+        <div class="bg-[#6B63B5] rounded-lg p-4 text-white text-[11px] leading-tight font-extrabold uppercase">
+          <p><span class="block mb-1">QUEM PODE REALIZAR UMA ADOÇÃO?</span></p>
+          <p class="font-normal uppercase leading-snug">
+            Qualquer um pode realizar uma adoção, apenas é necessário ter no mínimo 18 anos e preencher os requisitos no nosso formulário do site!!
+          </p>
+        </div>
+        <div class="bg-[#6B63B5] rounded-lg p-4 text-white text-[11px] leading-tight font-extrabold uppercase">
+          <p><span class="block mb-1">O QUE POSSO FAZER PARA AJUDAR O PET A SE ADPTAR AO SEU NOVO LAR?</span></p>
+          <p class="font-normal uppercase leading-snug">
+            1- Manter a calma no momento de adaptação do seu animalzinho.<br/>
+            2- Manter uma rotina para o animalzinho, seja a hora de comer, brincar, dormir ou possivelmente passear.<br/>
+            3- Manter o cheiro de seus objetos.<br/>
+            4- Ser amoroso.<br/>
+            5- Cuidar com porta e janelas(principalmente envolvendo gatos).<br/>
+            6- Apresente outros animalzinho ou pessoas, mas com muita calma para não assustar o mesmo.<br/>
+            7- Seja feliz com seu animalzinho.
+          </p>
+        </div>
+        <div class="bg-[#6B63B5] rounded-lg p-4 text-white text-[11px] leading-tight font-extrabold uppercase">
+          <p><span class="block mb-1">QUAIS DOCUMENTOS SÃO NECESSÁRIOS PARA ADOTAR?</span></p>
+          <p class="font-normal uppercase leading-snug">
+            É necessário ter RG ou CNH, comprovante de residência, além de ser necessário preencher nosso formulário.
+          </p>
+        </div>
+        <div class="bg-[#6B63B5] rounded-lg p-4 text-white text-[11px] leading-tight font-extrabold uppercase">
+          <p><span class="block mb-1">POSSO SAIR COM O MEU GATO NO COLO?</span></p>
+          <p class="font-normal uppercase leading-snug">
+            Sempre visamos o bem estar do seu animalzinho, o melhor a ser feito é trazer consigo uma caixinha de transporte no dia da retirada.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gato lateral - jogado para trás (z-0) -->
+    <div class="fixed top-20 right-0 flex flex-col space-y-4 z-0 opacity-50 pointer-events-none">
+      <img src="Assets/istockphoto-1138089752-612x612-removebg-preview.png"/>
+    </div>
+
+    <!-- Gato canto inferior - também atrás -->
+    <div class="fixed bottom-0 right-0 z-0 opacity-50 pointer-events-none">
+      <img src="Assets/istockphoto-1138089752-612x612-removebg-preview.png"/>
+    </div>
+  </body>
 </html>
