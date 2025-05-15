@@ -1,74 +1,81 @@
 <html class="scroll-smooth" lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Pet Adoption Info</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   </head>
-  <body class="bg-white relative overflow-x-hidden">
+  <body class="bg-gray-100 relative overflow-x-hidden">
 
-    <!-- Container principal com z-10 -->
-    <div class="relative z-10 max-w-[1200px] mx-auto px-4 py-8 flex flex-col md:flex-row md:space-x-6">
-      <!-- Imagens Luzia e Difusor com tamanho reduzido -->
-      <div class="md:w-1/2 flex flex-col space-y-4">
-        <div class="relative rounded-lg overflow-hidden" style="transform: rotate(-3deg);">
-          <img src="Assets/Luzia.jpeg" class="w-[250px] h-auto mx-auto" />
+    <header>
+      <div class="nav">
+        <a href="Inicial.html">
+          <img src="Assets/logo roxa (1).png" alt="Ícone de pata" width="50">
+        </a>
+        <a href="Animais.Html" class="nav-item">ANIMAZINHOS</a>
+        <a href="Doação.Html" class="nav-item">DOAÇÕES</a>
+        <a href="Lar.Html" class="nav-item">OFERECER LAR TEMPORÁRIO</a>
+        <a href="frenquentes.html" class="nav-item">PERGUNTAS FREQUENTES</a>
+        <a href="maustratos.html" class="nav-item">MAUS TRATOS</a>
+      </div>
+    </header>
+
+    <div class="relative z-10 max-w-[1200px] mx-auto px-6 py-10 flex flex-col lg:flex-row lg:space-x-10">
+      
+      <div class="lg:w-1/2 flex justify-center items-center space-x-6 mb-8 lg:mb-0">
+        <div class="rounded-lg overflow-hidden shadow-md" style="transform: rotate(-2deg);">
+          <img src="Assets/Luzia.jpeg" class="w-[400px] h-auto rounded-md" />
         </div>
-        <div class="relative rounded-lg overflow-hidden" style="transform: rotate(3deg); margin-top: -40px;">
-          <img src="Assets/Difusor.jpeg" class="w-[250px] h-auto mx-auto" />
+        <div class="rounded-lg overflow-hidden shadow-md" style="transform: rotate(2deg);">
+          <img src="Assets/Difusor.jpeg" class="w-[300px] h-auto rounded-md" />
         </div>
       </div>
 
-      <!-- Blocos de texto -->
-      <div class="md:w-1/2 flex flex-col space-y-4 mt-6 md:mt-0">
-        <div class="bg-[#6B63B5] rounded-lg p-4 text-white text-[11px] leading-tight font-extrabold uppercase">
-          <p><span class="block mb-1">O QUE PRECISO TER ANTES DE TRAZER O PET PARA CASA?</span></p>
-          <p class="font-normal uppercase leading-snug">
+      <div class="lg:w-1/2 flex flex-col space-y-6">
+        <div class="bg-[#545384] rounded-xl p-6 text-white font-semibold uppercase shadow-lg">
+          <p class="mb-2">O que preciso ter antes de trazer o pet para casa?</p>
+          <p class="font-normal normal-case">
             Muito amor para dar e carinho, mas não esquecendo de ração, brinquedos para o pet passar tempo e se divertir, uma caixinha de transporte e afins.
           </p>
         </div>
-        <div class="bg-[#6B63B5] rounded-lg p-4 text-white text-[11px] leading-tight font-extrabold uppercase">
-          <p><span class="block mb-1">QUEM PODE REALIZAR UMA ADOÇÃO?</span></p>
-          <p class="font-normal uppercase leading-snug">
+        <div class="bg-[#545384] rounded-xl p-6 text-white font-semibold uppercase shadow-lg">
+          <p class="mb-2">Quem pode realizar uma adoção?</p>
+          <p class="font-normal normal-case">
             Qualquer um pode realizar uma adoção, apenas é necessário ter no mínimo 18 anos e preencher os requisitos no nosso formulário do site!!
           </p>
         </div>
-        <div class="bg-[#6B63B5] rounded-lg p-4 text-white text-[11px] leading-tight font-extrabold uppercase">
-          <p><span class="block mb-1">O QUE POSSO FAZER PARA AJUDAR O PET A SE ADPTAR AO SEU NOVO LAR?</span></p>
-          <p class="font-normal uppercase leading-snug">
+        <div class="bg-[#545384] rounded-xl p-6 text-white font-semibold uppercase shadow-lg">
+          <p class="mb-2">O que posso fazer para ajudar o pet a se adaptar ao seu novo lar?</p>
+          <p class="font-normal normal-case">
             1- Manter a calma no momento de adaptação do seu animalzinho.<br/>
             2- Manter uma rotina para o animalzinho, seja a hora de comer, brincar, dormir ou possivelmente passear.<br/>
             3- Manter o cheiro de seus objetos.<br/>
             4- Ser amoroso.<br/>
-            5- Cuidar com porta e janelas(principalmente envolvendo gatos).<br/>
-            6- Apresente outros animalzinho ou pessoas, mas com muita calma para não assustar o mesmo.<br/>
+            5- Cuidar com portas e janelas (principalmente envolvendo gatos).<br/>
+            6- Apresente outros animais ou pessoas com calma para não assustá-lo.<br/>
             7- Seja feliz com seu animalzinho.
           </p>
         </div>
-        <div class="bg-[#6B63B5] rounded-lg p-4 text-white text-[11px] leading-tight font-extrabold uppercase">
-          <p><span class="block mb-1">QUAIS DOCUMENTOS SÃO NECESSÁRIOS PARA ADOTAR?</span></p>
-          <p class="font-normal uppercase leading-snug">
-            É necessário ter RG ou CNH, comprovante de residência, além de ser necessário preencher nosso formulário.
+        <div class="bg-[#545384] rounded-xl p-6 text-white font-semibold uppercase shadow-lg">
+          <p class="mb-2">Quais documentos são necessários para adotar?</p>
+          <p class="font-normal normal-case">
+            É necessário ter RG ou CNH, comprovante de residência, além de preencher nosso formulário.
           </p>
         </div>
-        <div class="bg-[#6B63B5] rounded-lg p-4 text-white text-[11px] leading-tight font-extrabold uppercase">
-          <p><span class="block mb-1">POSSO SAIR COM O MEU GATO NO COLO?</span></p>
-          <p class="font-normal uppercase leading-snug">
-            Sempre visamos o bem estar do seu animalzinho, o melhor a ser feito é trazer consigo uma caixinha de transporte no dia da retirada.
+        <div class="bg-[#545384] rounded-xl p-6 text-white font-semibold uppercase shadow-lg">
+          <p class="mb-2">Posso sair com o meu gato no colo?</p>
+          <p class="font-normal normal-case">
+            Sempre visamos o bem-estar do seu animalzinho. O ideal é trazer uma caixinha de transporte no dia da retirada.
           </p>
         </div>
       </div>
     </div>
 
-    <!-- Gato lateral - jogado para trás (z-0) -->
-    <div class="fixed top-20 right-0 flex flex-col space-y-4 z-0 opacity-50 pointer-events-none">
-      <img src="Assets/istockphoto-1138089752-612x612-removebg-preview.png"/>
+    <div class="fixed top-20 right-0 flex flex-col space-y-4 z-0 opacity-40 pointer-events-none">
+      <img src="Assets/Patas-removebg-preview.png" />
     </div>
 
-    <!-- Gato canto inferior - também atrás -->
-    <div class="fixed bottom-0 right-0 z-0 opacity-50 pointer-events-none">
-      <img src="Assets/istockphoto-1138089752-612x612-removebg-preview.png"/>
-    </div>
   </body>
 </html>
